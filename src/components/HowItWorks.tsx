@@ -94,14 +94,14 @@ export const HowItWorks = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center"
         >
-          <div className="inline-block p-8 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl border-2 border-dashed border-primary/50 hover:border-primary transition-all cursor-pointer">
-            <Upload className="w-16 h-16 text-primary mx-auto mb-4" />
-            <h4 className="text-xl font-heading font-bold mb-2">Ready to get started?</h4>
-            <p className="text-muted-foreground mb-4">Drop your files or click to upload</p>
-            <Button className="bg-accent text-accent-foreground hover:bg-accent/90 cursor-glow">
-              Choose Files
-            </Button>
-          </div>
+          <h4 className="text-2xl font-heading font-bold mb-4">Ready to get started?</h4>
+          <p className="text-muted-foreground mb-6">Get in touch to discuss your project</p>
+          <Button 
+            className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://instagram.com/founded.by.me', '_blank')}
+          >
+            Contact Us
+          </Button>
         </motion.div>
       </div>
     </section>
