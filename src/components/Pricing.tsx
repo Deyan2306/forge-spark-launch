@@ -160,10 +160,35 @@ export const Pricing = () => {
         </div>
 
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="mt-12 p-6 glassmorphism rounded-xl border-2 border-gold max-w-4xl mx-auto animate-float"
+        >
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <h4 className="font-heading font-bold text-xl">ML Bundle</h4>
+                <span className="bg-gold text-gold-foreground px-3 py-1 rounded-full text-xs font-bold">
+                  Best for ML Students
+                </span>
+              </div>
+              <p className="text-sm text-muted-foreground mb-1">
+                ≤15 pages + SciKit-Plots Pro • 24h turnaround
+              </p>
+              <p className="text-3xl font-heading font-bold text-gradient">$70</p>
+            </div>
+            <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+              Get ML Bundle
+            </Button>
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-12 p-6 bg-gradient-to-r from-accent/20 to-primary/20 rounded-xl border border-accent/50 max-w-4xl mx-auto"
+          transition={{ duration: 0.6, delay: 0.9 }}
+          className="mt-8 p-6 bg-gradient-to-r from-accent/20 to-primary/20 rounded-xl border border-accent/50 max-w-4xl mx-auto"
         >
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div>

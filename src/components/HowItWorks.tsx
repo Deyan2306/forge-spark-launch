@@ -17,7 +17,7 @@ const steps = [
     icon: Zap,
     title: "We Convert",
     description:
-      "Our team transcribes your notes into clean, professional LaTeX. We handle the complex formatting so you don't have to.",
+      "Our experts OCR, transcribe, and polish. ML notes? We code your plots in SciKit-Learn. Sample in 2 hours.",
   },
   {
     number: 3,

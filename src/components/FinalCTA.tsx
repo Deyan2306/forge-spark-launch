@@ -92,8 +92,8 @@ export const FinalCTA = () => {
                 <span className="text-gold font-heading font-bold text-lg">Limited Offer</span>
               </div>
               <p className="text-white text-sm">
-                First 10 orders this month: <span className="font-bold">FREE TikZ diagrams</span>{" "}
-                ($20 value)
+                First 10 orders get <span className="font-bold">FREE SciKit-Plots Pro</span>{" "}
+                ($35 value) if ML notes included
               </p>
             </div>
           </motion.div>

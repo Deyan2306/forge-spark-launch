@@ -36,6 +36,11 @@ const addOns = [
     price: "+$15",
     description: "BibTeX formatting and integration",
   },
+  {
+    title: "SciKit-Plots Pro",
+    price: "+$35",
+    description: "Hand-drawn ML sketches → executable Python plots in LaTeX",
+  },
 ];
 
 export const Services = () => {
