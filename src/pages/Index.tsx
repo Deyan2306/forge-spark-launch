@@ -12,9 +12,7 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <DiscountBanner />
-      <div className="pt-10 sm:pt-12">
-        <Hero />
-      </div>
+      <Hero />
       <WhyTexForge />
       <PriceBuilder />
       <HowItWorks />
