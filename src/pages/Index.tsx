@@ -1,18 +1,22 @@
 import { Hero } from "@/components/Hero";
 import { WhyTexForge } from "@/components/WhyTexForge";
-import { Services } from "@/components/Services";
+import { PriceBuilder } from "@/components/PriceBuilder";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
+import { DiscountBanner } from "@/components/DiscountBanner";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
-      <Hero />
+      <DiscountBanner />
+      <div className="pt-10 sm:pt-12">
+        <Hero />
+      </div>
       <WhyTexForge />
-      <Services />
+      <PriceBuilder />
       <HowItWorks />
       <Pricing />
       <FAQ />

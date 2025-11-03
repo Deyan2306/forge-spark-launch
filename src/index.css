@@ -119,6 +119,23 @@ All colors MUST be HSL.
   html {
     scroll-behavior: smooth;
   }
+
+  /* Mobile-first responsive utilities */
+  @media (max-width: 767px) {
+    .container {
+      @apply px-4;
+    }
+  }
+
+  /* Ensure touch targets are at least 48px */
+  button, a[role="button"] {
+    min-height: 48px;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    min-width: 20px;
+    min-height: 20px;
+  }
 }
 
 @layer utilities {

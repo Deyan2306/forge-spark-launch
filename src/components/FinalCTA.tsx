@@ -74,9 +74,10 @@ export const FinalCTA = () => {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-gold to-accent text-accent-foreground hover:from-accent hover:to-gold text-xl px-12 py-8 cursor-glow shadow-2xl hover:shadow-gold/50 transition-all duration-300"
+              className="w-full sm:w-auto bg-gradient-to-r from-gold to-accent text-accent-foreground hover:from-accent hover:to-gold text-xl px-12 py-8 cursor-glow shadow-2xl hover:shadow-gold/50 transition-all duration-300 min-h-[48px]"
+              onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
             >
-              START YOUR PROJECT – $40
+              START YOUR PROJECT – $30
             </Button>
           </motion.div>
 

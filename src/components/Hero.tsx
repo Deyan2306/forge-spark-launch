@@ -49,7 +49,7 @@ export const Hero = () => {
             </motion.div>
 
             <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold mb-6 leading-tight"
+              className="text-[clamp(28px,5vw,72px)] font-heading font-bold mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -59,12 +59,21 @@ export const Hero = () => {
             </motion.h1>
 
             <motion.p
-              className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0"
+              className="text-[clamp(14px,2.5vw,20px)] text-muted-foreground mb-4 max-w-2xl mx-auto lg:mx-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               Professional document conversion service for students, researchers, and academics. From scribbles to publication-ready documents.
+            </motion.p>
+
+            <motion.p
+              className="text-[clamp(13px,2.2vw,18px)] text-primary font-semibold mb-8 max-w-2xl mx-auto lg:mx-0"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.45 }}
+            >
+              Now with SciKit-Learn plots on EVERY order — loss curves, trees, PCA, confusion matrices.
             </motion.p>
 
             <motion.div
@@ -75,15 +84,15 @@ export const Hero = () => {
             >
               <Button
                 size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                onClick={() => scrollToSection("pricing")}
+                className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 min-h-[48px] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                onClick={() => scrollToSection("services")}
               >
-                ORDER NOW – $40 Flat Rate
+                ORDER NOW – $30 Flat Rate
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 py-6 border-2 hover:bg-primary/5"
+                className="w-full sm:w-auto text-lg px-8 min-h-[48px] border-2 hover:bg-primary/5"
                 onClick={() => scrollToSection("how-it-works")}
               >
                 How It Works

@@ -108,7 +108,9 @@ export const WhyTexForge = () => {
           <h3 className="text-3xl font-heading font-bold text-center mb-8">
             TexForge vs. Alternatives
           </h3>
-          <div className="overflow-x-auto">
+          
+          {/* Desktop Table View */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b-2 border-primary">
@@ -137,6 +139,34 @@ export const WhyTexForge = () => {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Mobile Card View */}
+          <div className="md:hidden space-y-4">
+            {comparisonData.map((row, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
+                className="bg-card border border-border rounded-lg p-4 space-y-3"
+              >
+                <h4 className="font-heading font-bold text-lg">{row.feature}</h4>
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  <div>
+                    <div className="text-xs text-muted-foreground mb-1">TexForge</div>
+                    <div className="text-primary font-semibold">{row.texforge}</div>
+                  </div>
+                  <div>
+                    <div className="text-xs text-muted-foreground mb-1">Alternatives</div>
+                    <div className="text-muted-foreground">{row.alternative}</div>
+                  </div>
+                </div>
+                <div className="text-xs text-muted-foreground border-t border-border pt-2">
+                  {row.why}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
 

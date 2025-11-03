@@ -4,31 +4,45 @@ import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Sparkles } from "lucide-react";
 
-const pricingTiers = [
+interface PricingTier {
+  name: string;
+  price: number;
+  originalPrice?: number;
+  description: string;
+  features: string[];
+  popular: boolean;
+  discount?: string;
+}
+
+const pricingTiers: PricingTier[] = [
   {
     name: "Starter",
-    price: 40,
+    price: 30,
+    originalPrice: 40,
     description: "Perfect for individual assignments",
     features: [
-      "Up to 10 pages",
+      "Up to 15 pages",
       "24-hour turnaround",
       "Basic equations & tables",
       "PDF + LaTeX source",
       "One revision round",
+      "SciKit-Learn plots available",
     ],
     popular: true,
+    discount: "25% OFF",
   },
   {
     name: "Professional",
     price: 75,
     description: "Ideal for complete problem sets",
     features: [
-      "Up to 25 pages",
+      "Up to 30 pages",
       "24-hour turnaround",
       "Complex equations & diagrams",
       "PDF + LaTeX source",
       "Two revision rounds",
       "Priority support",
+      "SciKit-Learn plots available",
     ],
     popular: false,
   },
@@ -44,6 +58,7 @@ const pricingTiers = [
       "Unlimited revisions",
       "Dedicated support",
       "Rush delivery available",
+      "SciKit-Learn plots available",
     ],
     popular: false,
   },
@@ -107,10 +122,10 @@ export const Pricing = () => {
                 }`}
               >
                 {tier.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-gold text-gold-foreground px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+                    <span className="bg-gold text-gold-foreground px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg animate-pulse">
                       <Sparkles className="w-4 h-4" />
-                      Most Popular
+                      25% OFF - First 50 Orders
                     </span>
                   </div>
                 )}
@@ -121,7 +136,12 @@ export const Pricing = () => {
                 </div>
 
                 <div className="mb-6">
-                  <div className="flex items-baseline gap-2">
+                  <div className="flex items-baseline gap-2 flex-wrap">
+                    {tier.originalPrice && (
+                      <span className="text-2xl font-heading font-bold text-muted-foreground line-through">
+                        ${tier.originalPrice}
+                      </span>
+                    )}
                     <span className="text-5xl font-heading font-bold text-gradient">
                       ${animatedPrices[index]}
                     </span>

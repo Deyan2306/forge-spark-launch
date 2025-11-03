@@ -36,9 +36,9 @@ const faqs = [
       "Yes. We treat your documents with complete confidentiality. Your files are processed securely, never shared with third parties, and permanently deleted from our servers after delivery. We can sign an NDA if required.",
   },
   {
-    question: "What's included in the $40 base price?",
+    question: "What's included in the $30 base price?",
     answer:
-      "Our $40 flat rate includes: conversion of up to 10 pages of handwritten notes, standard equations and tables, basic hand-drawn diagrams, both LaTeX source files and a compiled PDF, 24-hour delivery, and one round of revisions. Additional pages and services have clearly listed prices.",
+      "Our $30 starter rate (limited time) includes: conversion of up to 15 pages of handwritten notes, standard equations and tables, basic hand-drawn diagrams, both LaTeX source files and a compiled PDF, 24-hour delivery, and one round of revisions. SciKit-Learn plots available as add-on.",
   },
   {
     question: "Can you recreate diagrams?",
