@@ -98,7 +98,7 @@ export const HowItWorks = () => {
           <p className="text-muted-foreground mb-6">Get in touch to discuss your project</p>
           <Button 
             className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            onClick={() => window.open('https://instagram.com/founded.by.me', '_blank')}
+            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSebwjUELnnVdSWC0luwZ5crHJJgybJ41MyJAALyi7UTIrx2jA/viewform?usp=header', '_blank')}
           >
             Contact Us
           </Button>
