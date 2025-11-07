@@ -99,7 +99,7 @@ export const PriceBuilder = () => {
       total: actualTotal.toString(),
     });
 
-    window.open(`https://instagram.com/founded.by.me?${params}`, "_blank");
+    window.open(`https://docs.google.com/forms/d/e/1FAIpQLSebwjUELnnVdSWC0luwZ5crHJJgybJ41MyJAALyi7UTIrx2jA/viewform?usp=header?${params}`, "_blank");
     toast.success("Redirecting to order form...");
   };
 
