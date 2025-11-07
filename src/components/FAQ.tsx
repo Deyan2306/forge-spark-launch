@@ -104,7 +104,7 @@ export const FAQ = () => {
         >
           <p className="text-muted-foreground mb-4">Still have questions?</p>
           <a
-            href="mailto:hello@texforge.com"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSebwjUELnnVdSWC0luwZ5crHJJgybJ41MyJAALyi7UTIrx2jA/viewform?usp=header"
             className="text-primary hover:text-primary/80 font-semibold underline"
           >
             Contact us directly
